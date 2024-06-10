@@ -1,4 +1,4 @@
-## C++ Slides
+## C++ for Technical Interview Slides
 
 A non-exhaustive guide to C++ syntax, common STL functions and containers.
 
