@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -Wall -Wextra -std=gnu++2b -pedantic-errors
 
-TARGETS = algo deque map pq set stack struct vector recap template iterator
+TARGETS = algo deque map pq set stack struct vector recap template iterator linkedlist
 
 SRC_DIR = code
 BUILD_DIR = build

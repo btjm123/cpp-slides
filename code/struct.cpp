@@ -1,75 +1,42 @@
 #include <iostream>
+#include <string>
 
-class ListNode {
-    public:
-        int val;
-        ListNode* next;
-        ListNode() : val(0), next(nullptr) {}
-        ListNode(int x) : val(x), next(nullptr) {}
+struct Person {
+    std::string name;
+    int height;
+
+    friend std::ostream& operator<<(std::ostream& os, const Person& p) {
+        os << p.name << " has a height of " << p.height << '\n';
+        return os;
+    }
+
+    Person(): name("Nameless"), height(0) {};
+    Person(int x): name("Nameless"), height(x) {};
+    Person(std::string s, int x): name(s), height(x) {};
 };
 
-struct List {
-    ListNode* head{nullptr};
+void demo_class() {
+    Person stranger{5};
+    std::cout << stranger.name << " " << stranger.height << '\n';
 
-    List() = default;
+    Person tim{"tim", 2};
+    std::cout << tim.name << " " << tim.height << '\n';
 
-    List(List& other) {
-        ListNode* otherPtr = other.head;
-        ListNode* curHead{nullptr};
-        while (otherPtr != nullptr) {
-            ListNode* dummy = new ListNode(otherPtr->val);
-            if (curHead == nullptr) {
-                curHead = dummy;
-                this->head = curHead;
-            } else {
-                curHead->next = dummy;
-                curHead = curHead->next;
-            }
-            otherPtr = otherPtr->next;
-        }
-        
-    }
+    Person ghost{};
+    std::cout << ghost.name << " " << ghost.height << '\n';
+
+    // This wouldn't work as there is no constructor that matches the arguments
+    // Person jane{"Jane"};
+    // std::cout << jane.name << " " << jane.height << '\n';
+
+    // Overloading the << operator
+    std::cout << '\n';
+    std::cout << stranger;
+    std::cout << tim;
+    std::cout << ghost;
     
-    void prepend(int x) {
-        ListNode* dummy = new ListNode(x);
-        dummy->next = head;
-        head = dummy;
-    }
-
-    void print() {
-        ListNode* cur = head;
-        while (cur != nullptr) {
-					std::cout << cur->val << " ";
-            cur = cur->next;
-        }
-				std::cout << '\n';
-    }
-
-    ~List() {
-        ListNode* cur = head;
-        while (cur != nullptr) {
-            ListNode* dummy = cur;
-            cur = cur->next;
-            delete dummy;
-        }
-    }
-};
+}
 
 int main() {
-    List* x = new List();
-    x->prepend(15);
-    x->prepend(10);
-    x->prepend(9);
-
-    x->print();
-
-    List y = *x;
-    y.prepend(8);
-    x->print();
-    y.print();
-
-    y.prepend(69);
-    x->prepend(420);
-    y.print(); x->print();
-    return 0;
+    demo_class();
 }

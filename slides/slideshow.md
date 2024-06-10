@@ -77,10 +77,10 @@ class: invert
 
 ---
 
-## [Structs / Classes](https://wandbox.org/permlink/TPzuVZVLM0H4lXEK)
+## [Structs / Classes](https://wandbox.org/permlink/GAoUAdtN96DLgVvc)
 
 - Members of structs are public while those of classes are private by default
-- Rule of Three / Five
+- A less toy, more practical [example](https://wandbox.org/permlink/TPzuVZVLM0H4lXEK)
 
 ---
 
@@ -90,4 +90,4 @@ class: invert
 
 ## [Iterators](https://wandbox.org/permlink/8qNygdg6qYVOz1VJ)
 
-- Forward iterators and backwards iterators
+- Forward iterators and reverse iterators
