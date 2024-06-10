@@ -3,10 +3,10 @@ CXXFLAGS = -Wall -Wextra -std=gnu++2b -pedantic-errors
 
 TARGETS = algo deque map pq set stack struct vector recap
 
-SRC_DIR = .
+SRC_DIR = code
 BUILD_DIR = build
 
-%: %.cpp
+%: $(SRC_DIR)/%.cpp
 	@mkdir -p $(BUILD_DIR)
 	$(CXX) $(CXXFLAGS) $< -o $(BUILD_DIR)/$@ 
 	./$(BUILD_DIR)/$@
