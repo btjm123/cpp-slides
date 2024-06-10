@@ -20,6 +20,7 @@ class: invert
 
 - Ben
 - Y2 (soon) CS at NUS
+- Tele handle: @bbnbbnb123 (any questions feel free to ask)
 
 ## Agenda
 
