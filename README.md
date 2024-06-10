@@ -6,7 +6,8 @@ A non-exhaustive guide to C++ syntax, common STL functions and containers.
 
 - Ensure you have Homebrew (for MacOS users) and the neccessary compilers (i.e g++)
 - Run with `make XXX`, where `XXX` is the filename in `code/`
-- Example (builds/run code in `deque.cpp`, `algo.cpp` and `recap.cpp`)
+
+- Example (builds/run code in `deque.cpp`, `algo.cpp` and `recap.cpp`): 
 ```
 make clean
 make deque
