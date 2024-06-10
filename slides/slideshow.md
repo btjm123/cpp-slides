@@ -84,10 +84,10 @@ class: invert
 
 ---
 
-## Templates
+## [Templates](https://wandbox.org/permlink/7yJmxa1jFFtOj0Fw)
 
 - Work with generic types
 
-## Iterators
+## [Iterators](https://wandbox.org/permlink/8qNygdg6qYVOz1VJ)
 
 - Forward iterators and backwards iterators

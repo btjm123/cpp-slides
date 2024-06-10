@@ -1,14 +1,13 @@
 #include <iostream>
 #include <string>
 
-// Template struct for Person
 template <typename HType>
 struct Person {
     std::string name;
     HType height;
 
     friend std::ostream& operator<<(std::ostream& os, const Person& p) {
-        os << p.name << ", " << p.height;
+        os << p.name << " has a height of " << p.height << '\n';
         return os;
     }
 };
