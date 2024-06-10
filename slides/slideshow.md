@@ -27,7 +27,7 @@ class: invert
 - Standard Template Library
 - Custom Classes / Templates
 
-## Resource
+## [Resources](https://github.com/btjm123/cpp-slides/)
 
 ---
 
