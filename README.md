@@ -2,6 +2,12 @@
 
 A non-exhaustive guide to C++ syntax, common STL functions and containers.
 
+## Virtual Recording
+
+[Video link](https://youtu.be/TBeZzFxUhcU)
+
+[!Virtual Recording](https://iili.io/Jy6UVUb.md.jpg)](https://freeimage.host/i/Jy6UVUb)
+
 ## Running locally
 
 - Ensure you have Homebrew (for MacOS users) and the neccessary compilers (i.e g++)
