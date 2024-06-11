@@ -6,7 +6,7 @@ A non-exhaustive guide to C++ syntax, common STL functions and containers.
 
 [Video link](https://youtu.be/TBeZzFxUhcU)
 
-![Virtual Recording](https://iili.io/Jy6UVUb.md.jpg)](https://freeimage.host/i/Jy6UVUb)
+[![Jy6UVUb.md.jpg](https://iili.io/Jy6UVUb.md.jpg)](https://freeimage.host/i/Jy6UVUb)
 
 ## Running locally
 
